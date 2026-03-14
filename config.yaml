@@ -1,0 +1,24 @@
+
+env: "paper"
+
+kalshi:
+  api_key: "YOUR_KALSHI_API_KEY"
+  private_key: "YOUR_KALSHI_PRIVATE_KEY"
+  base_url: "https://api.kalshi.com"
+
+polymarket:
+  base_url: "https://api.polymarket.com"
+
+strategy:
+  min_edge: 0.30
+  max_edge: 0.51
+  max_notional_per_market: 100.0
+  max_daily_loss: 200.0
+
+backtest:
+  start_date: "2024-01-01"
+  end_date: "2024-12-31"
+
+dashboard:
+  host: "0.0.0.0"
+  port: 8000
