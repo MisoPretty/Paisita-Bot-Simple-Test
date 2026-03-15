@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="grid">
+
+<section class="card">
+<h2>Account</h2>
+<p><b>Equity:</b> {{ stats.equity }}</p>
+<p><b>Daily P&L:</b> {{ stats.daily_pnl }}</p>
+<p><b>Open Risk:</b> {{ stats.open_risk }}</p>
+</section>
+
+<section class="card">
+<h2>Open Positions</h2>
+
+{% if stats.open_positions %}
+<ul>
+{% for pos in stats.open_positions %}
+<li>{{ pos.market_id }} – {{ pos.side }} – {{ pos.size }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No open positions.</p>
+{% endif %}
+
+</section>
+
+<section class="card">
+
+<h2>Candidate Trades</h2>
+
+{% if stats.candidate_trades %}
+<ul>
+{% for trade in stats.candidate_trades %}
+<li>{{ trade.market_id }} – edge {{ trade.edge }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>No candidate trades yet.</p>
+{% endif %}
+
+</section>
+
+</div>
+
+{% endblock %}
