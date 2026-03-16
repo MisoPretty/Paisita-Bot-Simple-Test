@@ -6,7 +6,7 @@ kalshi:
   private_key: "C:/Users/twitt/Downloads/kalshi-key.txt"
   base_url: "https://api.kalshi.com"
 polymarket:
-  base_url: "https://api.polymarket.com"
+  base_url: https://trading-api.kalshi.com
 
 strategy:
   min_edge: 0.30
