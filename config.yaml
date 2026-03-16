@@ -15,7 +15,7 @@ strategy:
   max_daily_loss: 200.0
 
 backtest:
-  start_date: "2026-01-01"
+  start_date: "2025-01-01"
   end_date: "2026-12-31"
 
 dashboard:
