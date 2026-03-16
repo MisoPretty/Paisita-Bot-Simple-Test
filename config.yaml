@@ -3,7 +3,7 @@ env: "paper"
 
 kalshi:
   api_key: "a3f90940-0fa7-4fe6-b331-91664f96bdbb"
-  private_key: "C:\Users\twitt\Downloads\kalshi-key.txt"
+  private_key: "C:/Users/twitt/Downloads/kalshi-key.txt"
   base_url: "https://api.kalshi.com"
 polymarket:
   base_url: "https://api.polymarket.com"
